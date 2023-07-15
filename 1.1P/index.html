@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SIT 120 - Jake Young</title>
+        <style>
+            /* Internal CSS */
+            body {
+                background-color: #f3f3f3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .container {
+                text-align: center;
+                border: 2px solid #333;
+                border-radius: 10px;
+                padding: 50px;
+                background-color: #fff;
+            }
+            #my-table {
+                width: 100%;
+                margin-top: 50px;
+                border-collapse: collapse;
+            }
+            #my-table th, #my-table td {
+                border: 1px solid #666;
+                padding: 10px;
+            }
+            #time-display {
+                font-size: 24px;
+                margin-top: 50px;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 style="color: #333;">SIT120 - 1.1P - Jake Young</h1>
+            <img src="deakin_logo.png" alt="My Image" id="image" style="width:200px;height:200px;border-radius:50%;">
+            <table id="my-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>Joe Bloggs</td>
+                    <td>Joe@example.com</td>
+                </tr>
+            </table>
+            <form id="form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <input type="submit" value="Submit">
+            </form>
+            <div id="time-display"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
